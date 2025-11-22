@@ -1,0 +1,28 @@
+meta {
+  name: Create New User copy
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/v1/user/register
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1MjgxOTcsImV4cCI6MTc2MzYxNDU5N30.pSQRMuyPFxLcZJCoc7mt51P2UPIqvXjkSb0xZWyjyjM
+}
+
+body:json {
+  {
+    "name": "John Doe",
+    "email": "farhad@gmail.com",
+    "password": "Farhad2590@"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,54 @@
+meta {
+  name: All Teams
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:5000/api/v1/team
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1MjgxOTcsImV4cCI6MTc2MzYxNDU5N30.pSQRMuyPFxLcZJCoc7mt51P2UPIqvXjkSb0xZWyjyjM
+}
+
+body:json {
+  {
+    "name": "Alpha Development Team",
+    "description": "Frontend and backend development team for web applications",
+    "members": [
+      {
+        "name": "John Smith",
+        "role": "FRONTEND_DEVELOPER",
+        "capacity": 4
+      },
+      {
+        "name": "Sarah Johnson",
+        "role": "BACKEND_DEVELOPER",
+        "capacity": 5
+      },
+      {
+        "name": "Mike Chen",
+        "role": "FULL_STACK_DEVELOPER",
+        "capacity": 5
+      },
+      {
+        "name": "Emily Davis",
+        "role": "UI_UX_DESIGNER",
+        "capacity": 3
+      },
+      {
+        "name": "David Wilson",
+        "role": "PROJECT_MANAGER",
+        "capacity": 5
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

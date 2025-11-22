@@ -1,0 +1,32 @@
+meta {
+  name: Create Task
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/v1/task
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1MjgxOTcsImV4cCI6MTc2MzYxNDU5N30.pSQRMuyPFxLcZJCoc7mt51P2UPIqvXjkSb0xZWyjyjM
+}
+
+body:json {
+    {
+        "title": "Implement user authentication",
+        "description": "Create login and registration functionality with JWT tokens",
+        "projectId": "691e1ef381caede85def9b27",
+        "assignedTo": "691e172b9d85e92da5f56787",
+        "priority": "HIGH",
+        "status": "IN_PROGRESS"
+       
+      }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

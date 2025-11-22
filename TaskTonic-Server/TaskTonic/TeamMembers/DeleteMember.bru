@@ -1,0 +1,20 @@
+meta {
+  name: DeleteMember
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:5000/api/v1/team/691d4e2c2d574945e455c969/members/691d4e2c2d574945e455c96a
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1NTQwMDgsImV4cCI6MTc2MzY0MDQwOH0.4xG3p5alML0qZfr5PnCAPx6yCxCCx3wHto2Au7QoXXs
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

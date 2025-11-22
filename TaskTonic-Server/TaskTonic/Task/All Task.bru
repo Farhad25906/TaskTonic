@@ -1,0 +1,20 @@
+meta {
+  name: All Task
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:5000/api/v1/project
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1MjgxOTcsImV4cCI6MTc2MzYxNDU5N30.pSQRMuyPFxLcZJCoc7mt51P2UPIqvXjkSb0xZWyjyjM
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

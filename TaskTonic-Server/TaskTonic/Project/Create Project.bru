@@ -1,0 +1,31 @@
+meta {
+  name: Create Project
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/v1/project
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTFkNGRmZWFiN2M5ZDZhZWUzYjk1YzAiLCJlbWFpbCI6ImZhcmhhZEBnbWFpbC5jb20iLCJpYXQiOjE3NjM1MjgxOTcsImV4cCI6MTc2MzYxNDU5N30.pSQRMuyPFxLcZJCoc7mt51P2UPIqvXjkSb0xZWyjyjM
+}
+
+body:json {
+  {
+    "title": "E-Commerce Website Development",
+    "description": "Build a full-stack e-commerce platform with React, Node.js, and MongoDB",
+    "teamId": "691d4e2c2d574945e455c969",
+    "status": "PLANNING",
+    "startDate": "2024-01-15T00:00:00.000Z",
+    "endDate": "2024-06-30T00:00:00.000Z"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
